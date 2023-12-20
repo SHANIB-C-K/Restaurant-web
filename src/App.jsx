@@ -1,7 +1,11 @@
-import React from "react";
+import React from 'react'
 
 const App = () => {
-  return <div>Hello world</div>;
-};
+  return (
+    <>
+    <NavBar />
+    </>
+  )
+}
 
-export default App;
+export default App
