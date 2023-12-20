@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/food-logo.png";
 import { FaCartShopping } from "react-icons/fa6";
-import DarkMode from "./Darkmode";
+import DarkMode from "./DarkMode";
 
 const Navbar = () => {
   return (
