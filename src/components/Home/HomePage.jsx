@@ -19,6 +19,15 @@ const ImageList = [
   },
 ];
 
+const bgImage = {
+    backgroundImage: `url(${bgImg})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+    height: "100%"
+}
+
 const HomePage = () => {
   return <div></div>;
 };
