@@ -1,8 +1,8 @@
 import React from "react";
 import bgImg from "../../assets/vector3.png";
-import Food1 from "../../assets/biriyani2.png";
-import Food2 from "../../assets/biriyani3.png";
-import Food3 from "../../assets/biriyani5.png";
+import Food1 from "../../assets/biryani2.png";
+import Food2 from "../../assets/biryani3.png";
+import Food3 from "../../assets/biryani5.png";
 
 const ImageList = [
   {
@@ -20,16 +20,53 @@ const ImageList = [
 ];
 
 const bgImage = {
-    backgroundImage: `url(${bgImg})`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    width: "100%",
-    height: "100%"
-}
+  backgroundImage: `url(${bgImg})`,
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  width: "100%",
+  height: "100%",
+};
 
 const HomePage = () => {
-  return <div></div>;
+  const [ImageId, setImageId] = React.useState(Food1);
+  return (
+    <>
+      <div
+        style={bgImage}
+        className="min-h-[500px] sm:min-h-[600px] bg-gray-100 dark:bg-gray-950 dark:text-white duration-200 flex justify-center items-center"
+      >
+        <div className="container pb-8 sm:pb-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2">
+            {/* text content section */}
+            <div className="flex flex-col justify-center items-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
+                Welcome to the Restaurant Zone
+              </h1>
+              <p className="text-sm">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium voluptate quibusdam nobis, cumque pariatur ut
+                repellendus ipsum numquam harum dicta.
+              </p>
+              <div>
+                <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full hover:scale-105 duration-200">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            {/* image content section  */}
+            <div className="order-1 sm:order-2 min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative">
+                {/* mian section */}
+                <div>
+                    <img src={ImageId} alt="rounding image" className="w-[300px] sm:w-[450px] mx-auto spin" />
+                </div>
+                {/* image list section  */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default HomePage;
