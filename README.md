@@ -1,8 +1,8 @@
-### Restaurant Website
+## Restaurant Website
 
 
-This is a simple Restaurant Website using Reactjs language
+This is a simple Restaurant Website using ` Reactjs ` and ` Tailwind css ` language
 
-## Site link
+#### Site link
 
 [ Click here ](https://restaurant-web-reactjs.vercel.app/)
