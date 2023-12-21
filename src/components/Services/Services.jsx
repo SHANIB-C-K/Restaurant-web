@@ -44,6 +44,21 @@ const Services = () => {
             </p>
           </div>
           {/* Card section */}
+          <div>
+            <div>
+                {
+                    ServicesData.map(({id, img, name, description}) => {
+                        return (
+                            <div key={id}>
+                                <div>
+                                    <img src={img} alt="" />
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+          </div>
         </div>
       </div>
     </>
