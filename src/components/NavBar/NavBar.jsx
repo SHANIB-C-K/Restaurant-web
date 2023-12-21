@@ -1,3 +1,6 @@
+// This is Navbar page
+
+// This is importing section
 import React from "react";
 import Logo from "../../assets/food-logo.png";
 import { FaCartShopping } from "react-icons/fa6";
@@ -21,6 +24,7 @@ const Navbar = () => {
             <div className="flex items-center gap-4">
               <div>
                 <DarkMode />
+                {/* This is DarkMode page call */}
               </div>
               <ul className="hidden sm:flex gap-4">
                 <li>
@@ -51,6 +55,7 @@ const Navbar = () => {
               <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex item-center gap-2">
                 Order
                 <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
+                {/* This is cart icon call at react/icons */}
               </button>
             </div>
           </div>

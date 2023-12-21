@@ -9,6 +9,7 @@ const App = () => {
   return (
     <>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+        {/* This is default bg color set */}
         <NavBar />
         {/* This is navbar page call */}
         <HomePage />

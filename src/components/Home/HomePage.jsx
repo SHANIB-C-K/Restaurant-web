@@ -1,11 +1,12 @@
-// The is home page 
-
+// The is home page
+// This is importing section
 import React from "react";
 import bgImg from "../../assets/vector3.png";
 import Food1 from "../../assets/biryani2.png";
 import Food2 from "../../assets/biryani3.png";
 import Food3 from "../../assets/biryani5.png";
 
+// This is ImageList array declaration
 const ImageList = [
   {
     id: 1,
@@ -21,6 +22,7 @@ const ImageList = [
   },
 ];
 
+// This is bgImage style adding section
 const bgImage = {
   backgroundImage: `url(${bgImg})`,
   backgroundPosition: "center",
@@ -31,6 +33,7 @@ const bgImage = {
 };
 
 const HomePage = () => {
+  // This is create a usestate
   const [ImageId, setImageId] = React.useState(Food1);
   return (
     <>

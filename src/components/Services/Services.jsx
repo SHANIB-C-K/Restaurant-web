@@ -1,8 +1,9 @@
 // This is services page
-
+// This is importing section
 import React from "react";
 import Img2 from "../../assets/biryani2.png";
 
+// This is ServiceData array declaration section
 const ServicesData = [
   {
     id: 1,
