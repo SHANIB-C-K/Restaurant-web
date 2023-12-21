@@ -12,9 +12,11 @@ const DarkMode = () => {
     if (theme === "dark") {
       element.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      console.log(theme);
     } else {
       element.classList.remove("dark");
       localStorage.setItem("theme", "light");
+      console.log(theme);
     }
   }, [theme]);
   return (
