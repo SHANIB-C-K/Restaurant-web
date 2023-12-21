@@ -56,22 +56,30 @@ const HomePage = () => {
             </div>
             {/* image content section  */}
             <div className="order-1 sm:order-2 min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative">
-                {/* mian section */}
-                <div className="flex justify-center items-center h-[300px] sm:h-[450px] overflow-hidden">
-                    <img src={ImageId} alt="rounding image" className="w-[300px] sm:w-[450px] mx-auto spin" />
-                </div>
-                {/* image list section  */}
-                <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-10 bg-white/30 rounded-full">
-                  {
-                    ImageList.map((item) => (
-                      <img 
-                      key={item.id}
-                      src={item.img}
-                      className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
-                      />
-                    ))
-                  }
-                </div>
+              {/* mian section */}
+              <div className="flex justify-center items-center h-[300px] sm:h-[450px] overflow-hidden">
+                <img
+                  src={ImageId}
+                  alt="rounding image"
+                  className="w-[300px] sm:w-[450px] mx-auto spin"
+                />
+              </div>
+              {/* image list section  */}
+              <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-10 bg-white/30 rounded-full">
+                {ImageList.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.img}
+                    className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
+                    onClick={() => {
+                      setImageId(
+                        item.id === 1 ? Food1 : item.id === 2 ? Food2 : Food3
+                      );
+                      console.log(item.id);
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
