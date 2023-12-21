@@ -11,7 +11,9 @@ const App = () => {
     <NavBar /> 
     {/* This is navbar page call */}
     <HomePage />
+    {/* This is Homepage */}
     <Services />
+    {/* This is service page  */}
     </>
   )
 }
