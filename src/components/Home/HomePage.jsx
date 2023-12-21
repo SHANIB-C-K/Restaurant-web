@@ -1,3 +1,5 @@
+// The is home page 
+
 import React from "react";
 import bgImg from "../../assets/vector3.png";
 import Food1 from "../../assets/biryani2.png";

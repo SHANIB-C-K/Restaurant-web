@@ -1,7 +1,11 @@
+/* This is index.css file */
+
+/* This is tailwind connection */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* This is spin css property */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -11,5 +15,6 @@
   }
 }
 .spin {
+  /* This is spin class property */
   animation: spin 40s linear infinite;
 }
