@@ -4,6 +4,7 @@ import React from "react";
 import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./components/Home/HomePage";
 import Services from "./components/Services/Services";
+import Banner from "./components/Banner/Banner";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         {/* This is Homepage */}
         <Services />
         {/* This is service page  */}
+        <Banner />
       </div>
     </>
   );
