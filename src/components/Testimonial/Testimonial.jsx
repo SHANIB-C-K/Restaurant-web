@@ -59,8 +59,13 @@ const Testimonial = () => {
               {testimonialData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
+                    <div>
+                      <img src={img} alt="" />
+                      <h1>{name}</h1>
+                      <p>{text}</p>
+                    </div>
                   </div>
-                )
+                );
               })}
             </Slider>
           </div>
