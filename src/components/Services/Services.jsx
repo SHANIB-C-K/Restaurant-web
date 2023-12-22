@@ -20,7 +20,7 @@ const ServicesData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum totam vitae laudantium reprehenderit tenetur voluptatibus iste eligendi at vero quae!",
   },
   {
-    id: 1,
+    id: 3,
     img: Img2,
     name: "Cold Cofee",
     description:
