@@ -19,7 +19,9 @@ const Testimonial = () => {
             </p>
           </div>
           {/* Testimonial section */}
-
+          <div className="grid grid-cols-1 max-w-[600px] mx-auto gap-6">
+            <Slider></Slider>
+          </div>
         </div>
       </div>
     </>
