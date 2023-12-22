@@ -5,7 +5,15 @@ const Testimonial = () => {
   var settings = {
     dots: true,
     arrows: false,
-    
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    pauseOnFocus: true,
   };
   return (
     <>
@@ -26,7 +34,7 @@ const Testimonial = () => {
           </div>
           {/* Testimonial section */}
           <div className="grid grid-cols-1 max-w-[600px] mx-auto gap-6">
-            <Slider></Slider>
+            <Slider {...settings}></Slider>
           </div>
         </div>
       </div>
