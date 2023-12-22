@@ -1,6 +1,12 @@
 import React from "react";
+import Slider from "react-slick";
 
 const Testimonial = () => {
+  var settings = {
+    dots: true,
+    arrows: false,
+    
+  };
   return (
     <>
       <div className="py-10">
