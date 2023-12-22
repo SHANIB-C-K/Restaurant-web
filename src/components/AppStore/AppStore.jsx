@@ -11,7 +11,9 @@ const AppStore = () => {
                     <h1 className='text-2xl text-center sm:text-left sm:text-4xl font-semibold dark:text-gray-400 text-gray-700'>Foodly available for Android and IOS</h1>
                 </div>
                 <div>
-                    
+                    <a href="#">
+                        <img src={PlayStoreImg} alt="playstore" />
+                    </a>
                 </div>
             </div>
         </div>
