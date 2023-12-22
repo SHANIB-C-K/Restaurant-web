@@ -59,10 +59,17 @@ const Testimonial = () => {
               {testimonialData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
-                    <div>
-                      <img src={img} alt="" />
-                      <h1>{name}</h1>
-                      <p>{text}</p>
+                    <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative ">
+                      <img
+                        src={img}
+                        alt="slide images"
+                        className="rounded-full block mx-auto"
+                      />
+                      <p className="text-gray-500 text-sm">{text}</p>
+                      <h1 className="text-xl font-bold">{name}</h1>
+                      <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
+                        ,,
+                      </p>
                     </div>
                   </div>
                 );
