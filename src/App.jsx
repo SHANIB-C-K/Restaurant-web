@@ -7,6 +7,7 @@ import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import AppStore from "./components/AppStore/AppStore";
 import Testimonial from "./components/Testimonial/Testimonial";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -24,6 +25,8 @@ const App = () => {
         <AppStore />
         {/* This is Testimonial page */}
         <Testimonial />
+        {/* This is Footer page */}
+        <Footer />
       </div>
     </>
   );
