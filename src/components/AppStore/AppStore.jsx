@@ -12,7 +12,7 @@ const AppStore = () => {
                 </div>
                 <div>
                     <a href="#">
-                        <img src={PlayStoreImg} alt="playstore" />
+                        <img src={PlayStoreImg} alt="playstore" className='max-w-[150px] sm:max-w-[120px] md:max-w-[200px]'/>
                     </a>
                 </div>
             </div>
