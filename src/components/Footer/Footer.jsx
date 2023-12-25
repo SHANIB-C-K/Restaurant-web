@@ -1,5 +1,7 @@
 import React from "react";
 import FooterLogo from "../../assets/food-logo.png";
+import { FaLocationArrow } from "react-icons/fa6";
+import { FaMobileAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -22,6 +24,10 @@ const Footer = () => {
                 nulla aperiam optio assumenda.
               </p>
               <br />
+              <div>
+                <FaLocationArrow />
+                <p>Kerala, Malappuram</p>
+              </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10"></div>
           </div>
