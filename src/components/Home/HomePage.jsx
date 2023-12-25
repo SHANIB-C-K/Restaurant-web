@@ -66,9 +66,12 @@ const HomePage = () => {
             </div>
             {/* image content section  */}
             <div className="order-1 sm:order-2 min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative">
-              {/* mian section */}
+              {/* mian image section */}
               <div className="flex justify-center items-center h-[300px] sm:h-[450px] overflow-hidden">
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="300"
+                  data-aos-once="true"
                   src={ImageId}
                   alt="rounding image"
                   className="w-[300px] sm:w-[450px] mx-auto spin"
