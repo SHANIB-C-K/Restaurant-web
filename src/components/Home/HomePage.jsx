@@ -81,6 +81,9 @@ const HomePage = () => {
               <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-10 bg-white/30 rounded-full">
                 {ImageList.map((item) => (
                   <img
+                    data-aos="zoom-in"
+                    data-aos-duration="300"
+                    data-aos-once="true"
                     key={item.id}
                     src={item.img}
                     className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
