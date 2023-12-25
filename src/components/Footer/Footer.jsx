@@ -1,12 +1,19 @@
 import React from "react";
+import Status from "../../assets/giphy.gif";
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-primary/20">
-        <h1 className="text-3xl sm:text-4xl font-bold justify-center text-center py-4 text-gray-500 dark:bg-gray-800">
-          This site is a work in progress. Not completed
-        </h1>
+      <div className="pt-12">
+        <div className="bg-primary/10 dark:bg-gray-900 pt-10">
+          <div data-aos="zoom-in" data-aos-duration="300">
+            <img
+              src={Status}
+              alt="Working progress image"
+              className="w-[300px] h-[300px] sm:max-w-[60%] block rounded-md mx-auto mix-blend-multiply dark:mix-blend-difference"
+            />
+          </div>
+        </div>
       </div>
     </>
   );
