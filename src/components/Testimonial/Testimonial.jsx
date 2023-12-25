@@ -9,13 +9,13 @@ const testimonialData = [
     img: "https://picsum.photos/101/101",
   },
   {
-    id: 1,
+    id: 2,
     name: "John Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
     img: "https://picsum.photos/102/102",
   },
   {
-    id: 1,
+    id: 3,
     name: "Smith",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
     img: "https://picsum.photos/103/103",
@@ -38,35 +38,38 @@ const Testimonial = () => {
   };
   return (
     <>
-      <div className="py-10">
+      <div data-aos="fade-up" data-aos-duration="300" className="py-10">
         <div className="container">
-          {/* Header section */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-              Testimonial
+              What our customers say
             </p>
             <h1 className="text-3xl font-bold">Testimonial</h1>
             <p className="text-xs text-gray-400">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor
-              nam porro? Dolorem impedit porro magnam architecto, consequatur
-              pariatur omnis?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perspiciatis delectus architecto error nesciunt,
             </p>
           </div>
-          {/* Testimonial section */}
-          <div className="grid grid-cols-1 max-w-[600px] mx-auto gap-6">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="300"
+            className="grid grid-cols-1 max-w-[600px] mx-auto gap-6"
+          >
             <Slider {...settings}>
-              {testimonialData.map(({ id, name, text, img }) => {
+              {testimonialData.map((data) => {
                 return (
-                  <div key={id} className="my-6">
-                    <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative ">
+                  <div className="my-6">
+                    <div
+                      key={data.id}
+                      className="flex flex-col justify-center items-center gap-4 text-center   shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative"
+                    >
                       <img
-                        src={img}
-                        alt="slide images"
                         className="rounded-full block mx-auto"
+                        src={data.img}
+                        alt=""
                       />
-                      <p className="text-gray-500 text-sm">{text}</p>
-                      <h1 className="text-xl font-bold">{name}</h1>
+                      <p className="text-gray-500 text-sm">{data.text}</p>
+                      <h1 className="text-xl font-bold">{data.name}</h1>
                       <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
                         ,,
                       </p>
