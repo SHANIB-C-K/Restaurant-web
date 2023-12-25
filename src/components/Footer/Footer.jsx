@@ -28,6 +28,10 @@ const Footer = () => {
                 <FaLocationArrow />
                 <p>Kerala, Malappuram</p>
               </div>
+              <div>
+                <FaMobileAlt />
+                <p>+91 6282844209</p>
+              </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10"></div>
           </div>
