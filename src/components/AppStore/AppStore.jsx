@@ -1,3 +1,6 @@
+// This is Appstore page
+
+// This is importing section
 import React from "react";
 import AppStoreImg from "../../assets/app_store.png";
 import PlayStoreImg from "../../assets/play_store.png";
@@ -19,6 +22,7 @@ const AppStore = () => {
               </h1>
               <div className="flex flex-wrap justify-center sm:justify-start items-center">
                 <a href="#">
+                  {/* This is Playstore image adding section */}
                   <img
                     src={PlayStoreImg}
                     alt="Play store"
@@ -26,6 +30,7 @@ const AppStore = () => {
                   />
                 </a>
                 <a href="#">
+                  {/* This is Appstore image adding section */}
                   <img
                     src={AppStoreImg}
                     alt="App store"
@@ -35,6 +40,7 @@ const AppStore = () => {
               </div>
             </div>
             <div data-aos="zoom-in" data-aos-duration="300">
+              {/* This is Delivering gif adding section */}
               <img
                 src={Gif}
                 alt="mobile bike"

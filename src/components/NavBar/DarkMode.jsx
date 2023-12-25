@@ -1,11 +1,18 @@
+// This is DarkMode page
+
+// This is importing section
 import React, { useState, useEffect } from "react";
 import darkPng from "../../assets/website/dark-mode-button.png";
 import lightPng from "../../assets/website/light-mode-button.png";
 
 const DarkMode = () => {
+  // This is DarkMde Function
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+    // This is Store in Dark or Light in  localStorage
   );
+
+  // This is element variable declare
   const element = document.documentElement;
 
   useEffect(() => {

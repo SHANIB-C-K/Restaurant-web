@@ -1,3 +1,6 @@
+// This is banner page
+
+// This is Importing section
 import React from "react";
 import BiryaniImg from "../../assets/biryani5.png";
 import Vector from "../../assets/vector3.png";
@@ -7,6 +10,7 @@ import { GiFoodTruck } from "react-icons/gi";
 
 const Banner = () => {
   const bgImage = {
+    // This is banner background set
     backgroundImage: `url(${Vector})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
