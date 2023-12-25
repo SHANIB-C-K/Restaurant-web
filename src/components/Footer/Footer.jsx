@@ -33,13 +33,13 @@ const Footer = () => {
             {/* Social Handle */}
             <div className="flex items-center gap-3 mt-6">
               <a href="#">
-                <FaInstagram className="text-3xl" />
+                <FaInstagram className="text-3xl hover:text-primary" />
               </a>
               <a href="#">
-                <FaFacebook className="text-3xl" />
+                <FaFacebook className="text-3xl hover:text-primary" />
               </a>
               <a href="#">
-                <FaLinkedin className="text-3xl" />
+                <FaLinkedin className="text-3xl hover:text-primary" />
               </a>
             </div>
           </div>
@@ -50,10 +50,12 @@ const Footer = () => {
                   Important Links
                 </h1>
                 <ul className={`flex flex-col gap-3`}>
-                  <li className="cursor-pointer">Home</li>
-                  <li className="cursor-pointer">About</li>
-                  <li className="cursor-pointer">Services</li>
-                  <li className="cursor-pointer">Login</li>
+                  <li className="cursor-pointer hover:text-primary">Home</li>
+                  <li className="cursor-pointer hover:text-primary">About</li>
+                  <li className="cursor-pointer hover:text-primary">
+                    Services
+                  </li>
+                  <li className="cursor-pointer hover:text-primary">Login</li>
                 </ul>
               </div>
             </div>
@@ -63,10 +65,12 @@ const Footer = () => {
                   Links
                 </h1>
                 <ul className="flex flex-col gap-3">
-                  <li className="cursor-pointer">Home</li>
-                  <li className="cursor-pointer">About</li>
-                  <li className="cursor-pointer">Services</li>
-                  <li className="cursor-pointer">Login</li>
+                  <li className="cursor-pointer hover:text-primary">Home</li>
+                  <li className="cursor-pointer hover:text-primary">About</li>
+                  <li className="cursor-pointer hover:text-primary">
+                    Services
+                  </li>
+                  <li className="cursor-pointer hover:text-primary">Login</li>
                 </ul>
               </div>
             </div>
@@ -77,10 +81,12 @@ const Footer = () => {
                 </h1>
                 {/* <ul className="list-disc list-inside"> */}
                 <ul className="flex flex-col gap-3">
-                  <li className="cursor-pointer">Home</li>
-                  <li className="cursor-pointer">About</li>
-                  <li className="cursor-pointer">Services</li>
-                  <li className="cursor-pointer">Login</li>
+                  <li className="cursor-pointer hover:text-primary">Home</li>
+                  <li className="cursor-pointer hover:text-primary">About</li>
+                  <li className="cursor-pointer hover:text-primary">
+                    Services
+                  </li>
+                  <li className="cursor-pointer hover:text-primary">Login</li>
                 </ul>
               </div>
             </div>
