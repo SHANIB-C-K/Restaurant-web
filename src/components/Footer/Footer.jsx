@@ -24,11 +24,11 @@ const Footer = () => {
                 nulla aperiam optio assumenda.
               </p>
               <br />
-              <div>
+              <div className="flex items-center gap-3 mt-6">
                 <FaLocationArrow />
                 <p>Kerala, Malappuram</p>
               </div>
-              <div>
+              <div className="flex items-center gap-3 mt-3">
                 <FaMobileAlt />
                 <p>+91 6282844209</p>
               </div>
