@@ -1,7 +1,11 @@
+// This is importing section
+
+import { Declaration } from "postcss";
 import React from "react";
 import Slider from "react-slick";
 
 const testimonialData = [
+  // This is testimonialData array Declaration
   {
     id: 1,
     name: "Samuel",
@@ -24,6 +28,7 @@ const testimonialData = [
 
 const Testimonial = () => {
   var settings = {
+    // This is settings style creating section
     dots: true,
     arrows: false,
     infinite: true,
@@ -55,6 +60,7 @@ const Testimonial = () => {
             data-aos-duration="300"
             className="grid grid-cols-1 max-w-[600px] mx-auto gap-6"
           >
+            {/* Slidebar section */}
             <Slider {...settings}>
               {testimonialData.map((data) => {
                 return (

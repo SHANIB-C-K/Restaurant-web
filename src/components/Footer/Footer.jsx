@@ -1,3 +1,5 @@
+// This is imprting section
+
 import {
   FaFacebook,
   FaInstagram,
@@ -28,18 +30,22 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-3 mt-3">
               <FaMobileAlt />
+              {/* This is mobile icon */}
               <p>+91 6282844209</p>
             </div>
             {/* Social Handle */}
             <div className="flex items-center gap-3 mt-6">
               <a href="#">
                 <FaInstagram className="text-3xl hover:text-primary" />
+                {/* This is Instagram icon */}
               </a>
               <a href="#">
                 <FaFacebook className="text-3xl hover:text-primary" />
+                {/* This is facebook icon */}
               </a>
               <a href="#">
                 <FaLinkedin className="text-3xl hover:text-primary" />
+                {/* This is linkeding icon */}
               </a>
             </div>
           </div>
@@ -93,6 +99,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
+          {/* This is copyright section */}
           <div className="text-center py-10 border-t-2 border-gray-300/50">
             @copyright 2024 All rights reserved || Made with ❤️ by Shanib c k
           </div>
